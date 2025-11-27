@@ -1,0 +1,70 @@
+.sidebar {
+  background-color: $sidebar-bg;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: $accent;
+  font-size: 2.5rem;
+  letter-spacing: 0.1rem;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  height: 17rem;
+  justify-content: space-between;
+
+  a {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.8;
+    font-weight: 500;
+
+    &:hover {
+      opacity: 1;
+      color: $accent;
+    }
+  }
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  > a {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    gap: 3rem;
+  }
+  .menu {
+    height: 20rem;
+    a {
+      font-size: 1.3rem;
+      font-weight: 700;
+    }
+  }
+  .logo {
+    font-size: 4rem;
+  }
+  .social {
+    gap: 2rem;
+    > a {
+      width: 55px;
+      height: 55px;
+    }
+  }
+}

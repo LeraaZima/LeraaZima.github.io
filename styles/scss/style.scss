@@ -1,0 +1,18 @@
+// 1. Переменные
+@import "base/variables";
+
+// 2. Reset
+@import "base/reset";
+
+// 3. Базовая типографика
+@import "base/base";
+
+// 4. Layout
+@import "layout/layout";
+@import "layout/sidebar";
+
+// 5. Страницы
+@import "pages/about";
+@import "pages/contact";
+@import "pages/home";
+@import "pages/portfolio";

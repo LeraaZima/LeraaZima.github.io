@@ -1,0 +1,165 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  background-color: #141313;
+  color: #ffffff;
+  line-height: 1.5;
+}
+
+.page {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "content" "sidebar";
+  min-height: 100vh;
+}
+
+@media (min-width: 768px) {
+  .page {
+    grid-template-columns: 30rem 1fr;
+    grid-template-areas: "sidebar content";
+  }
+}
+.sidebar {
+  grid-area: sidebar;
+}
+
+.content {
+  grid-area: content;
+  padding: 2rem;
+}
+
+.sidebar {
+  background-color: #0e0e0e;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #eae112;
+  font-size: 2.5rem;
+  letter-spacing: 0.1rem;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  height: 17rem;
+  justify-content: space-between;
+}
+.menu a {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.8;
+  font-weight: 500;
+}
+.menu a:hover {
+  opacity: 1;
+  color: #eae112;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+.social > a {
+  width: 45px;
+  height: 45px;
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    gap: 3rem;
+  }
+  .menu {
+    height: 20rem;
+  }
+  .menu a {
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+  .logo {
+    font-size: 4rem;
+  }
+  .social {
+    gap: 2rem;
+  }
+  .social > a {
+    width: 55px;
+    height: 55px;
+  }
+}
+.home {
+  min-height: 100vh;
+  position: relative;
+  background-image: url(/assets/img/me.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 0.3rem;
+}
+.home::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(30, 30, 30, 0.8);
+  z-index: 1;
+}
+.home p,
+.home h1,
+.home h2 {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+}
+.home p,
+.home h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.home h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .home p,
+  .home h2 {
+    font-size: 2rem;
+  }
+  .home h1 {
+    font-size: 3.5rem;
+  }
+}/*# sourceMappingURL=style.css.map */
