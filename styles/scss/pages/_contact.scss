@@ -1,0 +1,132 @@
+.contact {
+  padding: 2.5rem 1.25rem;
+  color: #fff;
+
+  &__container {
+    max-width: 68rem; // ограничиваю максимальную ширину контейнера
+    margin: 0 auto; // центрирую
+  }
+
+  &__title {
+    font-size: 2.63rem;
+    margin-bottom: 1.88rem;
+    text-align: center;
+    letter-spacing: 0.12rem;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    margin-bottom: 2.5rem;
+  }
+
+  &__form-wrapper {
+    background: #1e1e1e;
+    padding: 1.6rem;
+    border-radius: 0.87rem;
+    border: 0.06rem solid #323232;
+  }
+
+  &__form-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+  }
+}
+
+.contact-card {
+  background: #1e1e1e;
+  padding: 1.25rem;
+  border-radius: 0.87rem;
+  text-align: center;
+  border: 0.06rem solid #323232;
+
+  &__icon img {
+    width: 2.8rem;
+    margin-bottom: 0.62rem;
+  }
+
+  &__title {
+    font-size: 1.25rem;
+    margin-bottom: 0.37rem;
+  }
+
+  &__text {
+    // opacity: 0.7;
+    color: #e0e0e0;
+    opacity: 1;
+  }
+}
+
+.contact-form {
+  &__row {
+    display: flex;
+    gap: 0.87rem;
+    margin-bottom: 0.87rem;
+
+    input {
+      flex: 1; // равномерное распределение полей
+    }
+  }
+}
+
+.contact-form {
+  input,
+  textarea {
+    width: 100%;
+    padding: 0.75rem 0.87rem;
+    background: #141414;
+    border-radius: 0.5rem;
+    color: #fff;
+    font-size: 1rem;
+    border: 0.1rem solid $accent;
+  }
+
+  textarea {
+    height: 9.3rem;
+    resize: none;
+    margin-top: 0.62rem;
+  }
+}
+
+.contact-form {
+  &__btn {
+    width: 8.75rem;
+    font-size: 1.2rem;
+    margin-top: 1.25rem;
+    padding: 0.75rem 0.875rem;
+    background: #fff;
+    color: #000;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: 600;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact {
+    &__cards {
+      grid-template-columns: repeat(3, 1fr); // три колонки на больших экранах
+    }
+  }
+
+  .contact {
+    &__form-wrapper {
+      padding: 2.2rem;
+    }
+  }
+}
+
+label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  border: 0;
+  white-space: nowrap;
+}
+

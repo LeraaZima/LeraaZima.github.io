@@ -9,7 +9,7 @@
     text-align: center;
     max-width: 50rem;
     margin: 0 auto 2rem;
-    opacity: 0.8;
+    color: #e0e0e0;
     line-height: 1.6;
   }
 
@@ -48,11 +48,11 @@
   &__role {
     font-size: 1rem;
     font-weight: 600;
-    letter-spacing: 1px;
+    letter-spacing: 0.06rem;
   }
 
   &__text {
-    opacity: 0.8;
+    color: #e0e0e0;
     line-height: 1.6;
   }
 
@@ -63,25 +63,26 @@
     gap: 1rem;
     margin-top: 1.5rem;
   }
-
-  .btn {
+  &__btn {
     padding: 0.8rem 1.5rem;
     border-radius: 0.5rem;
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
+  }
 
-    &--yellow {
-      background: $accent;
-      color: #000;
-      border: none;
-    }
+  &__btn--yellow {
+    @extend .about__btn;
+    background: $accent;
+    color: #000;
+    border: none;
+  }
 
-    &--outline {
-      background: transparent;
-      border: 2px solid $accent;
-      color: $accent;
-    }
+  &__btn--outline {
+    @extend .about__btn;
+    background: transparent;
+    border: 0.125rem solid $accent;
+    color: $accent;
   }
 }
 
@@ -102,8 +103,8 @@
     gap: 1rem;
 
     img {
-      width: 40px;
-      height: 40px;
+      width: 2.5rem;
+      height: 2.5rem;
     }
   }
 }
@@ -134,21 +135,20 @@
       font-size: 1.2rem;
     }
 
-    .btn {
+    &__btn {
       font-size: 1.2rem;
     }
   }
 
   .stack {
-
     &__title {
       font-size: 2rem;
     }
 
     &__icons {
       img {
-        width: 55px;
-        height: 55px;
+        width: 3.43rem;
+        height: 3.43rem;
       }
     }
   }

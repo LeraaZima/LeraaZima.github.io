@@ -1,0 +1,92 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+  // Sidebar
+  .sidebar {
+    padding: 1.5rem;
+    .logo {
+      font-size: 3rem;
+    }
+    .menu a {
+      font-size: 1.3rem;
+    }
+  }
+
+  // Home
+  .home {
+    h1 {
+      font-size: 3rem;
+    }
+    p,
+    h2 {
+      font-size: 1.7rem;
+    }
+  }
+
+
+  //about
+  .about {
+    &__subtitle {
+      font-size: 1.2rem;
+      max-width: 45rem; // чтобы не растягивалось
+    }
+
+    &__wrapper {
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    &__photo {
+      max-width: 90%; 
+      img {
+        width: 60%; 
+        max-width: 25rem; 
+        border-radius: 1rem;
+        object-fit: cover;
+      }
+    }
+
+    &__name {
+      font-size: 1.8rem;
+    }
+
+    &__role {
+      font-size: 1.2rem;
+    }
+
+    &__text {
+      font-size: 1.1rem;
+    }
+
+    .btn {
+      font-size: 1.1rem;
+      padding: 0.7rem 1.4rem;
+    }
+  }
+
+  .stack {
+    &__title {
+      font-size: 1.5rem;
+    }
+
+    &__icons {
+      img {
+        width: 3rem;
+        height: 3rem;
+      }
+    }
+  }
+
+  // Portfolio
+  .portfolio__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  // Contact
+  .contact__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact__form-wrapper {
+    max-width: 40rem;
+    margin: 0 auto;
+  }
+}

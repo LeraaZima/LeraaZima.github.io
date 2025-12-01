@@ -1,6 +1,17 @@
+//  Глобальные стили для body
+
 body {
   font-family: $font-main;
   background-color: $bg-dark;
   color: $text-light;
-  line-height: 1.5;
+  line-height: 1.5; //читаемость текста
+}
+
+//Визуальный фокус
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+  outline: 0.15rem solid $accent;
+  outline-offset: 0.2rem;
 }

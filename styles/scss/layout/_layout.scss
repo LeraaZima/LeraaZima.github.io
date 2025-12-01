@@ -8,12 +8,12 @@
     'content'
     'sidebar';
 
-  min-height: 100vh;
+  min-height: 100vh; // минимальная высота на весь экран
 }
 
 @media (min-width: 768px) {
   .page {
-    grid-template-columns: 30rem 1fr;
+    grid-template-columns: 30rem 1fr; // фиксированная ширина
     grid-template-areas: 'sidebar content';
   }
 }
@@ -25,4 +25,19 @@
 .content {
   grid-area: content;
   padding: 2rem;
+}
+
+//Ссылка «Перейти к контенту»
+.skip-link {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  padding: 8px 16px;
+  background: #fff;
+  color: #000;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
 }

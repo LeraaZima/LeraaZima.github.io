@@ -9,10 +9,9 @@
 }
 
 .logo {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: $accent;
-  font-size: 2.5rem;
   letter-spacing: 0.1rem;
 }
 
@@ -22,11 +21,12 @@
   height: 17rem;
   justify-content: space-between;
 
-  a {
+  > a {
     font-size: 1.5rem;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    opacity: 0.8;
+    letter-spacing: 0.06rem;
+    // opacity: 0.8;
+    opacity: 1;
     font-weight: 500;
 
     &:hover {
@@ -40,9 +40,10 @@
   display: flex;
   flex-direction: row;
   gap: 1.5rem;
+
   > a {
-    width: 45px;
-    height: 45px;
+    width: 2.8rem;
+    height: 2.8rem;
   }
 }
 
@@ -50,21 +51,26 @@
   .sidebar {
     gap: 3rem;
   }
+
   .menu {
     height: 20rem;
-    a {
+
+    > a {
       font-size: 1.5rem;
       font-weight: 700;
     }
   }
+
   .logo {
     font-size: 4rem;
   }
+
   .social {
     gap: 2rem;
+
     > a {
-      width: 55px;
-      height: 55px;
+      width: 3.43rem;
+      height: 3.43rem;
     }
   }
 }

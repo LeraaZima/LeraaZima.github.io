@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio — Zima</title>
+    <link rel="stylesheet" href="styles/scss/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+    </style>
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Skip to content</a>
+    <div class="page">
+      <aside class="sidebar">
+        <p class="logo">Zima?</p>
+        <nav class="menu">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Me</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="social">
+          <a href="#"><img src="/assets/icons/telegram.png" alt="tg" /></a>
+          <a href="#"><img src="/assets/icons/instagram.png" alt="inst" /></a>
+          <a href="#"><img src="/assets/icons/vk.png" alt="vk" /></a>
+          <a href="#"><img src="/assets/icons/tik_tok.png" alt="tiktok" /></a>
+        </div>
+      </aside>
+
+      <section class="contact">
+        <div class="contact__container">
+          <h2 class="contact__title">Contact</h2>
+          <div class="contact__cards">
+            <div class="contact-card">
+              <div class="contact-card__icon">
+                <img src="/assets/icons/Group 1.png" alt="contact" />
+              </div>
+              <h3 class="contact-card__title">Звони)</h3>
+              <p class="contact-card__text">+7-000-000-00-00</p>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card__icon">
+                <img src="/assets/icons/Group 1.png" alt="contact" />
+              </div>
+              <h3 class="contact-card__title">Пиши))</h3>
+              <p class="contact-card__text">zzzzz@mail.ru</p>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card__icon">
+                <img src="/assets/icons/Group 1.png" alt="contact" />
+              </div>
+              <h3 class="contact-card__title">Можешь еще раз позвонить</h3>
+              <p class="contact-card__text">+7-000-000-00-00</p>
+            </div>
+          </div>
+
+          <div class="contact__form-wrapper">
+            <h3 class="contact__form-title">Потыкай, напиши</h3>
+
+            <form class="contact-form">
+              <div class="contact-form__row">
+                <label for="name">Name</label>
+                <input id="name" type="text" placeholder="Name" />
+
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Email" />
+              </div>
+
+              <label for="subject">Subject</label>
+              <input
+                id="subject"
+                type="text"
+                class="contact-form__subject"
+                placeholder="Subject"
+              />
+
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                class="contact-form__message"
+                placeholder="Message"
+              ></textarea>
+
+              <button class="contact-form__btn" type="submit">Попробуй</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
